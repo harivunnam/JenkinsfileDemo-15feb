@@ -18,7 +18,7 @@ stages{
      }
      steps{
      git 'https://github.com/Sonal0409/DevOpsCodeDemo.git'
-     sh 'mvn compile'
+     bat 'mvn compile'
      }
    }
    stage('Build on QA Env')
@@ -28,7 +28,7 @@ stages{
    }
    steps{
    git 'https://github.com/Sonal0409/DevOpsCodeDemo.git'
-   sh 'mvn test'
+   bat 'mvn test'
    }
    
    }
